@@ -1,0 +1,31 @@
+$colors: #df6659, #e9bf2e, #2ecc71, #3ca5aa, #c35945, #eea52b, #27ae60, #1a7c7b;
+$repeat: 6;
+$circleColors: #c35945, #eea52b, #1a7c7b, #27ae60;
+$percentColors: #df6659, #e9bf2e, #3ca5aa, #2ecc71;
+$squareColor: #df6659, #3ca5aa, #c35945, #1a7c7b;
+@mixin setColor() {
+  @for $i from 1 through $repeat {
+      .metro-block:nth-child(#{$i}) {
+          background: (nth($colors, $i+1));
+          position: relative;
+      }
+  }
+}
+@mixin setCircleColor(){
+  @for $i from 1 through 4 {
+    $clr:  (nth($circleColors, $i));
+    $precentClr: (nth($percentColors, $i));
+    .center:nth-child(#{$i}) .circle {
+        background-image: linear-gradient(54deg, $clr 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $clr 50%, $precentClr 50%, $precentClr) !important;
+    }
+  }
+}
+
+@mixin setSquareColor(){
+  @for $i from 1 through 4 {
+    $clr:  (nth($squareColor, $i));
+    .work-experience div:nth-child(#{$i}){
+        background-color: $clr;
+    }
+  }
+}
