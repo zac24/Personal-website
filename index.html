@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/application.css">
+    <title></title>
+  </head>
+  <body>
+    <div data-scroll-header class="header">
+      <div class="center">
+        <a  data-scroll='{ "easing": "linear", "offset": 80 }' href="#home"><p>HOME</p></a>
+        <a  data-scroll='{ "easing": "linear", "offset": 80 }' href="#whoIam"><p>WHO I AM</p></a>
+        <a  data-scroll='{ "easing": "linear", "offset": 80 }' href="#projects"><p>PROJECTS</p></a>
+        <a  data-scroll='{ "easing": "linear", "offset": 80 }' href="#getInTouch"><p>GET IN TOUCH</p></a>
+      </div>
+    </div>
+    <div id="home" class="section-1">
+      <video loop="" autoplay=""  preload="auto">
+        <source src="./assets/images/macbookpro.webm" type="video/webm">
+      </video>
+      <div class="content">
+        <p>Prashant Dwivedi</p>
+        <p>iOS Engineer, Freelancer</p>
+      </div>
+    </div>
+    <div id="whoIam" class="section-2">
+      <!-- <div class="left">
+        <div class="profile-img"></div>
+        <div class="social">
+          <a href="#" target="_blank"><i class="social-icons fb"></i></a>
+          <a href="#" target="_blank"><i class="social-icons tw"></i></a>
+          <a href="#" target="_blank"><i class="social-icons linkedin"></i></a>
+          <a href="#" target="_blank"><i class="social-icons github"></i></a>
+          <a href="#" target="_blank"><i class="social-icons bitbucket"></i></a>
+          <a href="#" target="_blank"><i class="social-icons stackoverflow"></i></a>
+        </div>
+        <p>
+          What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div> -->
+      <div class="right">
+        <div class="top">
+          <div class="circle-container">
+            <div class="center">
+              <span>Objective C</span>
+              <div class="circle progress-90">
+                <div class="inner-circle">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="center">
+              <span>Xcode</span>
+              <div class="circle progress-90">
+                <div class="inner-circle">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="center">
+              <span>Swift</span>
+              <div class="circle progress-75">
+                <div class="inner-circle">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="center">
+              <span>Design</span>
+              <div class="circle progress-75">
+                <div class="inner-circle">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="work-experience">
+            <div class="box">
+              <p>iOS Developer</p>
+              <p>Hubvents Pvt. ltd.</p>
+              <span class="fix">2013</span>
+            </div>
+            <div class="box">
+              <p>iOS Developer</p>
+              <p>Times Internet (CuponDunia)</p>
+              <span class="fix">2015</span>
+            </div>
+            <div class="box">
+              <p>Senior Software Developer</p>
+              <p>LimeRoad</p>
+              <span class="fix">Present</span>
+            </div>
+            <div class="box">
+              <p>Freelance</p>
+              <p>Others</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="section-3">
+      <div class="metro-block">
+        <div class="overlay"></div>
+        <img src="./assets/images/iphone.png" alt="">
+      </div>
+      <div class="metro-block">
+        <div class="overlay"></div>
+        <img src="./assets/images/iphone.png" alt="">
+      </div>
+      <div class="metro-block">
+        <div class="overlay"></div>
+        <img src="./assets/images/iphone.png" alt="">
+      </div>
+      <div class="metro-block">
+        <div class="overlay"></div>
+        <img src="./assets/images/iphone.png" alt="">
+      </div>
+      <div class="metro-block">
+        <div class="overlay"></div>
+        <img src="./assets/images/iphone.png" alt="">
+      </div>
+      <div class="metro-block">
+        <div class="overlay"></div>
+        <img src="./assets/images/iphone.png" alt="">
+      </div>
+    </div>
+    <div class="quote">
+      <p>"Creativity is allowing yourself to make mistakes. Design is knowing which ones to keep!"</p>
+      <p>- Scott Adams</p>
+    </div>
+    <div id="getInTouch" class="contact-us">
+      <form class="" action="index.html" method="post">
+        <input type="text" name="name" placeholder="Full Name" required="true">
+        <input type="email" name="email" placeholder="Email Address" required="true">
+        <textarea name="comments" placeholder="Comments"></textarea>
+        <input type="submit" name="send" value="SEND">
+      </form>
+    </div>
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script>
+      smoothScroll.init({
+        selectorHeader: '[data-scroll-header]'
+      });
+    </script>
+  </body>
+</html>
